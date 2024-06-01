@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\Broom.png" />
+    <None Remove="Images\Characteristics.png" />
+    <None Remove="Images\Profile.png" />
+    <None Remove="Images\Scoot.png" />
+    <None Remove="Images\Shovel.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\JanitorSimulator.Core\JanitorSimulator.Core.csproj" />
+    <ProjectReference Include="..\JanitorSimulator.DB\JanitorSimulator.DB.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\Broom.png" />
+    <Resource Include="Images\Characteristics.png" />
+    <Resource Include="Images\Profile.png" />
+    <Resource Include="Images\Scoot.png" />
+    <Resource Include="Images\Shovel.png" />
+  </ItemGroup>
+
+</Project>
